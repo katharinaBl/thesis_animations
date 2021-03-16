@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Supplement Dissertation</title>
+<meta name="author" content="Katharina Bliedtner"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="./reveal.js/css/theme/night.css" id="theme"/>
+
+<link rel="stylesheet" href="./presentation.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">Supplement Dissertation</h1><h2 class="author">Katharina Bliedtner</h2><p class="date">Created: 2021-03-16 Tue 17:26</p>
+</section>
+<section id="table-of-contents-section">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org48c041f">3. Dynamische Speckle</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+
+<section>
+<section id="slide-org48c041f">
+<h2 id="org48c041f">3. Dynamische Speckle</h2>
+<div class="outline-text-2" id="text-org48c041f">
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org2923e18">
+<h3 id="org2923e18">3.2 Speckle-Messtechnik</h3>
+<div class="outline-text-3" id="text-org2923e18">
+</div>
+</section>
+<section id="slide-org260caf3">
+<h4 id="org260caf3">3.2.2 Theoretische Speckleänderung bei Bewegung und Änderung des Objektes</h4>
+<div class="outline-text-4" id="text-org260caf3">
+</div>
+<ul class="org-ul">
+<li><a id="orga44ade3"></a>3.2.2.1. Objekttranslation in der Objektebene (in-plane)<br />
+<p>
+<b><b>Abbildung 3.8.:</b></b> Specklebewegung bei Objekttranslation in der Objektebene
+</p>
+
+<figure>
+<video class="video" width="70%" preload="metadata" poster="images/dynSpeckle/inplane2A.pdf" controls="true" loop="True"><source type="video/mp4" src="images/dynSpeckle/objektbewegung_eine richtung.mp4" /></video>
+<figcaption>(a) konstante horizontale Objektverschiebung in Schritten von 1 µm (0.6 Pixel)</figcaption>
+</figure>
+
+
+
+<figure>
+<video class="video" width="70%" preload="metadata" poster="images/dynSpeckle/inplane2B.pdf" controls="true" loop="True"><source type="video/mp4" src="images/dynSpeckle/objektbewegung_beide richtung.mp4" /></video>
+<figcaption>(b) konstante horizontale und vertikale Objektverschiebung in Schritten von je 1 µm (0.6 Pixel)</figcaption>
+</figure>
+</section>
+<section>
+</li>
+<li><a id="org10aa851"></a>3.2.2.2.  Objektrotation aus der Objektebene heraus (out-of-plane)<br />
+<p>
+<b><b>Abbildung 3.9.:</b></b> Einfluss der Detektionsebene auf die Specklebewegung bei Objektrotation
+</p>
+
+<figure>
+<video class="video" width="100%"  preload="metadata" poster="images/dynSpeckle/outofplaneA.pdf" controls="true" loop="True"><source type="video/mp4" src="images/dynSpeckle/outofplaneA.mp4" /></video>
+<figcaption>  (a) Bildebene, fokussiert </figcaption>
+</figure>
+
+</section>
+<section>
+<figure>
+<video class="video" width="100%"  preload="metadata" poster="images/dynSpeckle/outofplaneB.pdf" controls="true" loop="True"><source type="video/mp4" src="images/dynSpeckle/outofplaneB.mp4" /></video>
+<figcaption> (b) Bildebene, defokussiert (âz = â0,5 mm) </figcaption>
+</figure>
+</section>
+<section>
+<figure>
+<video class="video" width="100%" preload="metadata" poster="images/dynSpeckle/outofplaneC.pdf" controls="true" loop="True"><source type="video/mp4" src="images/dynSpeckle/outofplaneC.mp4" /></video>
+<figcaption> (c) Fourierebene </figcaption>
+</figure>
+</li>
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="./reveal.js/lib/js/head.min.js"></script>
+<script src="./reveal.js/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.20,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>
