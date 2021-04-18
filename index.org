@@ -8,8 +8,8 @@
 #+REVEAL_MIN_SCALE: 0.5
 #+REVEAL_MAX_SCALE: 2.5
 #+REVEAL_TRANS: none
-#+REVEAL_THEME: night
-#+REVEAL_EXTRA_CSS: ./presentation.css
+#+REVEAL_THEME: speckle
+#+REVEAL_EXTRA_CSS: ./animations.css
 
 
 
@@ -18,6 +18,12 @@
 #+AUTHOR: Katharina Bliedtner
 #+EMAIL: katharina.bliedtner@gmail.com
 
+* 1. Einleitung
+Dieses Dokument ist als Ergänzung zur Dissertation "" gedacht. Eine
+Vielzahl an Abbildungen in der Arbeit veranschaulicht dynamische
+Prozesse wie z.B. Specklebewegungen. Zum besseren Verständnis enthält
+dieses Dokument für diese Abbildungen eine Animation. Dieses Dokument
+ist genau wie die Arbeit gegliedert, Kapitel zu denen keine Animationen nötig sind, werden jedoch ausgespart.
 
 * 3. Dynamische Speckle
 ** 3.2 Speckle-Messtechnik
