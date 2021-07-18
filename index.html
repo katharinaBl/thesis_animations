@@ -85,7 +85,7 @@
 <!-- -------------------------     1       ------------------------------   -->
 
 
-	<section  class="subsection color--orange" id="blank">
+	<section  class="subsection color--orange" id="dynSpeckleTranslation">
 	  <div class="grid-wrapper">
 	    <div class="header">
 	      <div class="logo"></div>
@@ -103,7 +103,7 @@
 
 
 	       <tr>
-		 <td>Objekttranslation in der Objektebene</td>
+		 <td>Objekttranslation in der Objektebene </td>
 		 <td>
 		   <figure>
 		     <video class="video" width="70%"
@@ -139,7 +139,7 @@
 
 
 
-	<section  class="subsection color--orange" id="blank">
+	<section  class="subsection color--orange" id="dynSpeckleRotation">
 	  <div class="grid-wrapper">
 	    <div class="header">
 	      <div class="logo"></div>
@@ -171,7 +171,7 @@
 		      loop="True"><source type="video/mp4"
 		      src="images/dynSpeckle/outofplaneB.mp4#t=0.05"
 		      /></video>
-		      <figcaption> (b) Bildebene, defokussiert (âz = â0,5 mm) </figcaption>
+		      <figcaption> (b) Bildebene, defokussiert (∆z = -0,5 mm) </figcaption>
 		    </figure>
 		    <figure>
 		      <video class="video" width="60%"
@@ -198,7 +198,7 @@
 <!-- -------------------------      1      ------------------------------   -->
 
 
-	<section  class="subsection color--orange" id="blank">
+	<section  class="subsection color--orange" id="dynSpeckleDarstellung">
 	  <div class="grid-wrapper">
 	    <div class="header">
 	      <div class="logo"></div>
@@ -236,7 +236,7 @@
 <!-- -------------------------      2      ------------------------------   -->
 
 
-<section  class="subsection color--orange" id="blank">
+<section  class="subsection color--orange" id="dynSpeckleDarstellung2">
 	  <div class="grid-wrapper">
 	    <div class="header">
 	      <div class="logo"></div>
@@ -275,7 +275,7 @@
 <!-- -------------------------      3      ------------------------------   -->
 
 
-<section  class="subsection color--orange" id="blank">
+<section  class="subsection color--orange" id="dynSpeckleDarstellung3">
 	  <div class="grid-wrapper">
 	    <div class="header">
 	      <div class="logo"></div>
@@ -311,7 +311,7 @@
 <!-- -------------------------    DARST.   ------------------------------   -->
 <!-- -------------------------      2      ------------------------------   -->
 
-<!-- -------------------------   SPECKLE   ------------------------------   -->
+<!-- -------------------------   Monitoring   ------------------------------   -->
 <!-- -------------------------    START    ------------------------------   -->
 <!-- -------------------------             ------------------------------   -->
 
@@ -319,108 +319,739 @@
 	<section class="subsection color--orange" id="monitoring">
 	  <div class="grid-wrapper">
 	    <div class="logo"></div>
-	    <h1>speckle Monitoring</h1>
+	    <h1>Speckle basiertes Monitoring der Photokoagulation</h1>
 	    <div class="description">
-	       Darstellung theoretischer Veränderung der Specklemuster
-	       bei Bewegung oder struktureller Änderung der Probe,
-	       sowie Methoden zu dessen Darstellung als Funktion der
-	       Zeit.
+	       Simulation und Ergebnisse des Specklemonitoring während der Hyperthermie und Photokoagulation <i>ex-vivo</i> und  <i>in-vivo</i>
 	    </div>
 	  </div>
 	</section>
 
 
 
-<section>
-</li>
-<li><a id="orgf2ca0ca"></a>3.2.2.2.  Objektrotation aus der Objektebene heraus (out-of-plane)<br />
-<p>
-<b><b>
-</p>
+
+<!-- -------------------------   Monitoring   ------------------------------   -->
+<!-- -------------------------    Simulation ------------------------------   -->
+<!-- -------------------------     1       ------------------------------   -->
 
 
-						</div>
-					</div>
-				</section>
-				<section class="quote color--midnight" id="quote--midnight">
-					<div class="grid-wrapper">
-						<div class="logo"></div>
-						<blockquote>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis enim risus. Cras cursus at lacus eget malesuada. Duis vel justo lorem.
-							</p>
-							<hr/>
-							<cite>Caption/Annotation/Citation</cite>
-						</blockquote>
-					</div>
-				</section>
-				<section class="code color--dark" id="code--path">
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="section">Section</div>
-						</div>
-						<figure class="code">
-							<!--
-								Code highlighting is performed by highlight.js
+	<section  class="subsection color--orange" id="Simulation">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
+	    </div>
+	    <div>
+	      <h3> 5.3 Modell zur Simulation von Specklebewegungen während der Photokoagulation</h3>
+	      
+	      <br><br>
+           <table style="width:100%">
+               <colgroup>
+		 <col span="1" style="width: 30%;">
+		 <col span="1" style="width: 70%;">
+	       </colgroup>
+	       <tr>
+		 <td style="vertical-align:top">Zuerst ist die
+		 simulierte Temperaturverteilung über die Zeit radial
+		 über den Bestrahlungsbereich und darunter in die
+		 Tiefe gezeigt. Zusätzlich ist dazu der Verlauf der
+		 Tempertur und des Ahrreniusintegrals im Zentrum der
+		 Bestrahlung am oberen Ende des RPE gezeigt (Die
+		 Temperatur wurde für eine Bestrahlung mit 30 mW über
+		 200 ms und einem Fleckdurchmesser von 200 μm
+		 simuliert). Danach ist die aus der Temperatur
+		 errechnet Phasenänderung und die Bewegugn der
+		 resultierenden Speckle zu sehen. </td>
+		 <td>
+		   <figure>
+		     <video class="video" width="90%"
+		     preload="metadata"
+		     controls="true"
+		     loop="True"><source type="video/mp4"
+		     src="images/monitoring/PC.mp4#t=0.05" /></video>
+		     <figcaption></figcaption>
+		   </figure>
+		   <p>
+		 </td>
+	       </tr>
+	   </table>
+       </section>
 
-								Leading whitespace is trimmed by default.  Add the data-notrim attribute to the code element to preserve it.
-								If showing an HTML example, add the data-escape attribute to the code element.
-							-->
-							<pre><code class="lang-php">
-								namespace \myplanet\reveal;
+<!-- -------------------------   Monitoring   ------------------------------   -->
+<!-- -------------------------   Beispiele   ------------------------------   -->
+<!-- -------------------------      1      ------------------------------   -->
 
-								function foo() {
-									echo "bar";
-								}
-							</code></pre>
-							<!-- figcaption element is optional, can be placed above or below code  -->
-							<figcaption class="path">/src/myplanet/reveal/functions.php</figcaption>
-						</figure>
-					</div>
-				</section>
-				<!-- Team page can accommodate one or two profiles. -->
-				<section class="team" id="team">
-					<div class="grid-wrapper">
-						<div class="header">
-							<div class="logo"></div>
-							<div class="section">Section</div>
-						</div>
-						<div class="content">
-							<div class="profile">
-								<div class="basics">
-									<img src="lib/myplanet/portait-placeholder.png">
-									<div class="name">Name</div>
-									<div class="role">Role</div>
-									</div>
-								<div class="details">
-									<h2>Profile</h2>
-									<p>Yuriy is a Front-end Developer and Solutions Architect with Myplanet, specializing in Front-end and Drupal development. Originally joining the team remotely from Ukraine as a Creative Lead, Yuriy made the switch to full-time coding—and to Canada—in 2013. During his time with Myplanet, Yuriy has worked on an increasingly impressive array of projects for some of our most high-profile customers. He holds his Acquia certifications for Development and Front-end Development.</p>
-									<p class="supplement">Front-end Developers build the user interface layer of each product, using their deep knowledge of Drupal theming and use of popular front-end frameworks, including Angular.js, React.js, d3.js, and of course HTML5 and CSS.</p>
-								</div>
-							</div>
-							<div class="profile">
-								<div class="basics">
-									<img src="lib/myplanet/portait-placeholder.png">
-									<div class="name">Name</div>
-									<div class="role">Role</div>
-								</div>
-								<div class="details">
-									<h2>Profile</h2>
-									<p>Yuriy is a Front-end Developer and Solutions Architect with Myplanet, specializing in Front-end and Drupal development. Originally joining the team remotely from Ukraine as a Creative Lead, Yuriy made the switch to full-time coding—and to Canada—in 2013. During his time with Myplanet, Yuriy has worked on an increasingly impressive array of projects for some of our most high-profile customers. He holds his Acquia certifications for Development and Front-end Development.</p>
-									<p class="supplement">Front-end Developers build the user interface layer of each product, using their deep knowledge of Drupal theming and use of popular front-end frameworks, including Angular.js, React.js, d3.js, and of course HTML5 and CSS.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="end color--radiant" id="end-radiant">
-					<div class="logo-wrapper">
-						<div class="logo"><span class="visually-hidden">Myplanet</span></div>
-					</div>
-				</section>
-			</div>
-		</div>
+
+
+	<section  class="subsection color--orange" id="MonitoringBeispiele1">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
+	    </div>
+	    <div>
+	      <h3>5.5.1 Ergebnisse der  ex-vivo Messreihen an Schweineaugen</h3>			
+	      <h4>5.5.1.2. Analyse temperaturbedingter Specklebewegungen</h4>	
+	      
+		    <figure>
+		      <video class="video" width="90%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/keinSchaden.mp4#t=10.2"
+		      /></video>
+		      <figcaption> (a) kein Schaden, 210 W/cm<sup>2</sup> </figcaption>
+		    </figure>
+		    <p>
+		      <b><b>Abbildung 4.18.  Beispiel für
+		temperaturbedingte Specklebewegung</b></b><p><p>
+		dargestellt anhand von Zeitverlaufs-Specklemuster bei
+		verschiedenen Ausmaßen an Gewebeschäden. Links sind
+		die fluoreszenzmikroskopischen Bilder mit steigender
+		Anzahl an geschädigten RPE Zellen zu sehen (der
+		Maßstabsbalken entspricht 100 μm). Daneben jeweils das
+		Zeitverlaufs-Specklemuster mit überlagertem Verlauf
+		der Änderunng der Specklebewegung (SZSM) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
+		<small>Bestrahlungsparameter: Beleuchtungswellenlänge: 855
+		nm, Bestrahlungszeit: 500 ms, Fleckdurchmesser: 50,100
+		μm, Blende: 10,12 mm <br> Algorithmus: ZSM, Anzahl der
+		Spalten/Zeilen n = 40, Offset o = 9, Nachbarschaft l =
+		1</small>
+		      
+		  </td>
+		</tr>
+	      </table>
+	</section>
+
+
+<!-- -------------------------   Monitoring   ------------------------------   -->
+<!-- -------------------------   Beispiele   ------------------------------   -->
+<!-- -------------------------      2      ------------------------------   -->
+
+
+
+	<section  class="subsection color--orange" id="MonitoringBeispiele2">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
+	    </div>
+	    <div>
+	      <h3>5.5.1 Ergebnisse der  ex-vivo Messreihen an Schweineaugen</h3>				
+	      <h4>5.5.1.2. Analyse temperaturbedingter Specklebewegungen</h4>	
+	      
+		    <figure>
+		      <video class="video" width="90%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/leichterSchaden.mp4#t=10.2"
+		      /></video>
+		      <figcaption> (b) leichter Schaden, 298 W/cm<sup>2</sup> </figcaption>
+		    </figure>
+		    <p>
+		      <b><b>Abbildung 4.18.  Beispiel für
+		temperaturbedingte Specklebewegung</b></b><p><p>
+		dargestellt anhand von Zeitverlaufs-Specklemuster bei
+		verschiedenen Ausmaßen an Gewebeschäden. Links sind
+		die fluoreszenzmikroskopischen Bilder mit steigender
+		Anzahl an geschädigten RPE Zellen zu sehen (der
+		Maßstabsbalken entspricht 100 μm). Daneben jeweils das
+		Zeitverlaufs-Specklemuster mit überlagertem Verlauf
+		der Änderunng der Specklebewegung (SZSM) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
+		<small>Bestrahlungsparameter: Beleuchtungswellenlänge: 855
+		nm, Bestrahlungszeit: 500 ms, Fleckdurchmesser: 50,100
+		μm, Blende: 10,12 mm <br> Algorithmus: ZSM, Anzahl der
+		Spalten/Zeilen n = 40, Offset o = 9, Nachbarschaft l =
+		1</small>
+		      
+		  </td>
+		</tr>
+	      </table>
+	</section>
+
+
+	
+<!-- -------------------------   Monitoring   ------------------------------   -->
+<!-- -------------------------   Beispiele   ------------------------------   -->
+<!-- -------------------------      1      ------------------------------   -->
+
+
+
+	<section  class="subsection color--orange" id="MonitoringBeispiele3">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
+	    </div>
+	    <div>
+	       <h3>5.5.1 Ergebnisse der  ex-vivo Messreihen an Schweineaugen</h3>				
+	      <h4>5.5.1.2. Analyse temperaturbedingter Specklebewegungen</h4>	
+	      
+		    <figure>
+		      <video class="video" width="90%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/RPESchaden1.mp4#t=10.2"
+		      /></video>
+		      <figcaption> (c) RPE Schaden, 387 W/cm<sup>2</sup> </figcaption>
+		    </figure>
+		    <p>
+		      <b><b>Abbildung 4.18.  Beispiel für
+		temperaturbedingte Specklebewegung</b></b><p><p>
+		dargestellt anhand von Zeitverlaufs-Specklemuster bei
+		verschiedenen Ausmaßen an Gewebeschäden. Links sind
+		die fluoreszenzmikroskopischen Bilder mit steigender
+		Anzahl an geschädigten RPE Zellen zu sehen (der
+		Maßstabsbalken entspricht 100 μm). Daneben jeweils das
+		Zeitverlaufs-Specklemuster mit überlagertem Verlauf
+		der Änderunng der Specklebewegung (SZSM) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
+		<small>Bestrahlungsparameter: Beleuchtungswellenlänge: 855
+		nm, Bestrahlungszeit: 500 ms, Fleckdurchmesser: 50,100
+		μm, Blende: 10,12 mm <br> Algorithmus: ZSM, Anzahl der
+		Spalten/Zeilen n = 40, Offset o = 9, Nachbarschaft l =
+		1</small>
+		      
+		  </td>
+		</tr>
+	      </table>
+	</section>
+<!-- -------------------------   Monitoring   ------------------------------   -->
+<!-- -------------------------   Beispiele   ------------------------------   -->
+<!-- -------------------------      4      ------------------------------   -->
+
+
+
+	<section  class="subsection color--orange" id="MonitoringBeispiele4">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
+	    </div>
+	    <div>
+	      <h3>5.5.1 Ergebnisse der  ex-vivo Messreihen an Schweineaugen</h3>			
+	      <h4>5.5.1.2. Analyse temperaturbedingter Specklebewegungen</h4>	
+	      
+		    <figure>
+		      <video class="video" width="90%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/RPESchaden2.mp4#t=10.2"
+		      /></video>
+		      <figcaption> (d) RPE Schaden, 456 W/cm<sup>2</sup> </figcaption>
+		    </figure>
+		    <p>
+		      <b><b>Abbildung 4.18.  Beispiel für
+		temperaturbedingte Specklebewegung</b></b><p><p>
+		dargestellt anhand von Zeitverlaufs-Specklemuster bei
+		verschiedenen Ausmaßen an Gewebeschäden. Links sind
+		die fluoreszenzmikroskopischen Bilder mit steigender
+		Anzahl an geschädigten RPE Zellen zu sehen (der
+		Maßstabsbalken entspricht 100 μm). Daneben jeweils das
+		Zeitverlaufs-Specklemuster mit überlagertem Verlauf
+		der Änderunng der Specklebewegung (SZSM) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
+		<small>Bestrahlungsparameter: Beleuchtungswellenlänge: 855
+		nm, Bestrahlungszeit: 500 ms, Fleckdurchmesser: 50,100
+		μm, Blende: 10,12 mm <br> Algorithmus: ZSM, Anzahl der
+		Spalten/Zeilen n = 40, Offset o = 9, Nachbarschaft l =
+		1</small>
+		      
+		  </td>
+		</tr>
+	      </table>
+	</section>
+<!-- -------------------------   Monitoring   ------------------------------   -->
+<!-- -------------------------   Beispiele   ------------------------------   -->
+<!-- -------------------------      5      ------------------------------   -->
+
+
+
+	<section  class="subsection color--orange" id="MonitoringBeispiele5">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
+	    </div>
+	    <div>
+	       <h3>5.5.1 Ergebnisse der  ex-vivo Messreihen an Schweineaugen</h3>			
+	      <h4>5.5.1.2. Analyse temperaturbedingter Specklebewegungen</h4>	
+	      
+		    <figure>
+		      <video class="video" width="90%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/Weifärbung1.mp4#t=10.2"
+		      /></video>
+		      <figcaption> (e) Weißfärbung, 520 W/cm<sup>2</sup> </figcaption>
+		    </figure>
+		    <p>
+		      <b><b>Abbildung 4.18.  Beispiel für
+		temperaturbedingte Specklebewegung</b></b><p><p>
+		dargestellt anhand von Zeitverlaufs-Specklemuster bei
+		verschiedenen Ausmaßen an Gewebeschäden. Links sind
+		die fluoreszenzmikroskopischen Bilder mit steigender
+		Anzahl an geschädigten RPE Zellen zu sehen (der
+		Maßstabsbalken entspricht 100 μm). Daneben jeweils das
+		Zeitverlaufs-Specklemuster mit überlagertem Verlauf
+		der Änderunng der Specklebewegung (SZSM) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
+		<small>Bestrahlungsparameter: Beleuchtungswellenlänge: 855
+		nm, Bestrahlungszeit: 500 ms, Fleckdurchmesser: 50,100
+		μm, Blende: 10,12 mm <br> Algorithmus: ZSM, Anzahl der
+		Spalten/Zeilen n = 40, Offset o = 9, Nachbarschaft l =
+		1</small>
+		      
+		  </td>
+		</tr>
+	      </table>
+	</section>
+<!-- -------------------------   Monitoring   ------------------------------   -->
+<!-- -------------------------   Beispiele   ------------------------------   -->
+<!-- -------------------------      6      ------------------------------   -->
+
+
+
+	<section  class="subsection color--orange" id="MonitoringBeispiel6">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
+	    </div>
+	    <div>
+	       <h3>5.5.1 Ergebnisse der  ex-vivo Messreihen an Schweineaugen</h3>			
+	      <h4>5.5.1.2. Analyse temperaturbedingter Specklebewegungen</h4>	
+	      
+		    <figure>
+		      <video class="video" width="90%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/Weifärbung2.mp4#t=10.2"
+		      /></video>
+		      <figcaption> (f) Weißfärbung, 733 W/cm<sup>2</sup> </figcaption>
+		    </figure>
+		    <p>
+		      <b><b>Abbildung 4.18.  Beispiel für
+		temperaturbedingte Specklebewegung</b></b><p><p>
+		dargestellt anhand von Zeitverlaufs-Specklemuster bei
+		verschiedenen Ausmaßen an Gewebeschäden. Links sind
+		die fluoreszenzmikroskopischen Bilder mit steigender
+		Anzahl an geschädigten RPE Zellen zu sehen (der
+		Maßstabsbalken entspricht 100 μm). Daneben jeweils das
+		Zeitverlaufs-Specklemuster mit überlagertem Verlauf
+		der Änderunng der Specklebewegung (SZSM) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
+		<small>Bestrahlungsparameter: Beleuchtungswellenlänge: 855
+		nm, Bestrahlungszeit: 500 ms, Fleckdurchmesser: 50,100
+		μm, Blende: 10,12 mm <br> Algorithmus: ZSM, Anzahl der
+		Spalten/Zeilen n = 40, Offset o = 9, Nachbarschaft l =
+		1</small>
+		      
+		  </td>
+		</tr>
+	      </table>
+	</section>
+
+
+<!-- -------------------------   Monitoring   ------------------------------   -->
+<!-- -------------------------   Beispiele   ------------------------------   -->
+<!-- -------------------------      Bewegung      ------------------------------   -->
+
+
+
+	<section  class="subsection color--orange" id="MonitoringBeispielBewe">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
+	    </div>
+	    <div>
+	       <h3>5.5.1 Ergebnisse der  ex-vivo Messreihen an Schweineaugen</h3>			
+	      <h4>5.5.1.2. Analyse temperaturbedingter Specklebewegungen</h4>	
+	      
+		    <figure>
+		      <video class="video" width="90%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/Beispielbewegung.mp4#t=19.8"
+		      /></video>
+		    </figure>
+		    <p>
+		      <b><b>Abbildung 5.20.  Die unterschiedliche
+		Natur der Specklebewegung in den verschiedenen Phasen
+		der Bestrahlungg</b></b><p><p> Dem
+		Zeitverlaufs-Specklemuster einer Beispielbestrahlung
+		ist die Summe der Specklebewegungen der Sub-Bilder SVK
+		in blau, sowie die gesamtheitliche Richtung der
+		Bewegung (nach innen oder außen) in rot überlagert. Zu
+		jedem Zeitpunkt ist daneben die Vektorkarte, sowie der
+		ortsabhängige Winkel farbcodiert, dargestellt. Die Vektoren sind in
+		jedem Bild skaliert und entsprechen nicht dem
+		tatsächlichen Betrag der Bewegung der Speckle.  Der
+		grüne Punkt im Bild des Specklemusters ist sichtbar,
+		wenn der Laser eingeschaltet ist.<br>
+		<small>Bestrahlungsparameter: Beleuchtungswellenlänge: 633
+		nm, Bestrahlungszeit: 500 ms, Fleckdurchmesser: 200
+		μm, Blende: 12 mm <br> Algorithmus: VK, Größe der Subbilder n = 50, Offset o = 2.</small>
+		      
+	
+	</section>
+
+	
+<!-- -------------------------   Monitoring   ------------------------------   -->
+<!-- -------------------------   invivo wellenlänge   ------------------------------   -->
+<!-- -------------------------      1      ------------------------------   -->
+
+
+
+	<section  class="subsection color--orange" id="MonitoringInvivoBel">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
+	    </div>
+	    <div>
+	       <h3>5.5.2. in-vivo Messreihen an Kaninchenaugen</h3>			
+	      <h4>5.5.2.1. Beleuchtung bei 855 nm</h4>	
+	      	      <table style="width:100%">
+		<colgroup>
+		  <col span="1" style="width: 30%;">
+		  <col span="1" style="width: 70%;">
+		</colgroup>
+		<tr>
+		  <td style="vertical-align:top"><b><b>Abbildung 5.33.  Vergleich des Untergrundrauschens der Specklebewegung in-vivo und ex-vivo</b></b><p><p>
+		Zeitverlaufs-Specklemuster sind für Aufnahmen ohne Heizen gezeigt. Die Daten wurden der Bewegungskorrektur unterzogen. 
+  <br> ZSM-Algorithmus: Anzahl der Spalten/Zeilen n = 50</small> </td>
+		  <td>
+		    <figure>
+		      <video class="video" width="60%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/exvivo855.mp4#t=4.95"
+		      /></video>
+		      <figcaption> (a) bei einer Beleuchtungswellenlänge von 855 nm (Blende: 12 mm, 1000 fps). </figcaption>
+		    </figure>
+		    <figure>
+		      <video class="video" width="60%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/invivo855.mp4#t=4.95"
+		      /></video>
+		      <figcaption> (b) In-vivo bei einer Beleuchtungswellenlänge von 855 nm (Blende: 12 mm, 500 fps). </figcaption>
+		    </figure>
+		    <figure>
+		      <video class="video" width="60%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/invivo633.mp4#t=4.95"
+		      /></video>
+		      <figcaption> (c) In-vivo bei einer Beleuchtungswellenlänge von 633 nm (Blende: 12 mm, 500 fps).</figcaption>
+		    </figure>
+		    <p>
+		      
+		  </td>
+		</tr>
+		      </table>
+
+
+		  
+	 
+	</section>
+
+
+<!-- -------------------------   Monitoring   ------------------------------   -->
+<!-- -------------------------   invivo Rosa   ------------------------------   -->
+<!-- -------------------------      1      ------------------------------   -->
+
+
+
+	<section  class="subsection color--orange" id="MonitoringInvivoRosa7">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
+	    </div>
+	    <div>
+	       <h3>5.5.2. in-vivo Messreihen an Kaninchenaugen</h3>			
+	      <h4>5.5.2.1. Beleuchtung bei 633 nm</h4>	
+	      	      <table style="width:100%">
+		<colgroup>
+		  <col span="1" style="width: 35%;">
+		  <col span="1" style="width: 65%;">
+		</colgroup>
+		<tr>
+		  <td style="vertical-align:top">
+		    <figure>
+		      <img src="images/monitoring/RosaFundus7.pdf" style="width:100%">
+		  
+		    </figure> </td>
+		  <td>
+		    <figure>
+		      <video class="video" width="100%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/RosaSpot7.mp4#t=9.99"
+		      /></video>
+		      <figcaption> Läsion #7 - T<sub>max</sub> = 81°C </figcaption>
+		    </figure>
+		    <p>
+		      <b><b>Abbildung 5.34.  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
+		Beispielläsionen bei verschiedener Sichtbarkeit
+		markiert: Spot 16 - kaum sichtbar, Spot 43 und 45 -
+		spät sichtbar, Spot 7 und 21 - sofort sichtbar. Für
+		jede Läsion ist das Zeitverlaufs-Specklemuster gezeigt
+		 Der
+		grüne Punkt im Bild des Specklemusters ist sichtbar,
+		wenn der Laser eingeschaltet ist.<br>
+		<small> Bestrahlungsparameter: Beleuchtungswellenlänge: 633 nm Bestrahlungszeit: 500 ms, Fleckdurchmesser: 200 μm, Blende: 12 mm <br> ZSM-Algorithmus: Anzahl der Spalten/Zeilen n = 50, Offset o = 13, Nachbarschaft l = 9
+		  </small>
+		    <p>
+		      
+		  </td>
+		</tr>
+		      </table>
+
+
+	 
+	</section>
+
+<!-- -------------------------   Monitoring   ------------------------------   -->
+<!-- -------------------------   invivo Rosa   ------------------------------   -->
+<!-- -------------------------      2      ------------------------------   -->
+
+
+
+	<section  class="subsection color--orange" id="MonitoringInvivoRosa16">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
+	    </div>
+	    <div>
+	       <h3>5.5.2. in-vivo Messreihen an Kaninchenaugen</h3>			
+	      <h4>5.5.2.1. Beleuchtung bei 633 nm</h4>	
+	      	      <table style="width:100%">
+		<colgroup>
+		  <col span="1" style="width: 35%;">
+		  <col span="1" style="width: 65%;">
+		</colgroup>
+		<tr>
+		  <td style="vertical-align:top">
+		    <figure>
+		      <img src="images/monitoring/RosaFundus16.pdf" style="width:100%">
+		  
+		    </figure> </td>
+		  <td>
+		    <figure>
+		      <video class="video" width="100%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/RosaSpot16.mp4#t=9.99"
+		      /></video>
+		      <figcaption> Läsion #16 - T<sub>max</sub> = 50°C </figcaption>
+		    </figure>
+		    <p>
+		      <b><b>Abbildung 5.34.  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
+		Beispielläsionen bei verschiedener Sichtbarkeit
+		markiert: Spot 16 - kaum sichtbar, Spot 43 und 45 -
+		spät sichtbar, Spot 7 und 21 - sofort sichtbar. Für
+		jede Läsion ist das Zeitverlaufs-Specklemuster gezeigt
+		 Der
+		grüne Punkt im Bild des Specklemusters ist sichtbar,
+		wenn der Laser eingeschaltet ist.<br>
+		<small> Bestrahlungsparameter: Beleuchtungswellenlänge: 633 nm Bestrahlungszeit: 500 ms, Fleckdurchmesser: 200 μm, Blende: 12 mm <br> ZSM-Algorithmus: Anzahl der Spalten/Zeilen n = 50, Offset o = 13, Nachbarschaft l = 9
+		  </small>
+		    <p>
+		      
+		  </td>
+		</tr>
+		      </table>
+
+
+	 
+	</section>
+
+<!-- -------------------------   Monitoring   ------------------------------   -->
+<!-- -------------------------   invivo Rosa   ------------------------------   -->
+<!-- -------------------------      3      ------------------------------   -->
+
+
+
+	<section  class="subsection color--orange" id="MonitoringInvivoRosa21">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
+	    </div>
+	    <div>
+	       <h3>5.5.2. in-vivo Messreihen an Kaninchenaugen</h3>			
+	      <h4>5.5.2.1. Beleuchtung bei 633 nm</h4>	
+	      	      <table style="width:100%">
+		<colgroup>
+		  <col span="1" style="width: 35%;">
+		  <col span="1" style="width: 65%;">
+		</colgroup>
+		<tr>
+		  <td style="vertical-align:top">
+		    <figure>
+		      <img src="images/monitoring/RosaFundus21.pdf" style="width:100%">
+		  
+		    </figure> </td>
+		  <td>
+		    <figure>
+		      <video class="video" width="100%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/RosaSpot21.mp4#t=9.99"
+		      /></video>
+		      <figcaption> Läsion #21 - T<sub>max</sub> = 69°C </figcaption>
+		    </figure>
+		    <p>
+		      <b><b>Abbildung 5.34.  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
+		Beispielläsionen bei verschiedener Sichtbarkeit
+		markiert: Spot 16 - kaum sichtbar, Spot 43 und 45 -
+		spät sichtbar, Spot 7 und 21 - sofort sichtbar. Für
+		jede Läsion ist das Zeitverlaufs-Specklemuster gezeigt
+		 Der
+		grüne Punkt im Bild des Specklemusters ist sichtbar,
+		wenn der Laser eingeschaltet ist.<br>
+		<small> Bestrahlungsparameter: Beleuchtungswellenlänge: 633 nm Bestrahlungszeit: 500 ms, Fleckdurchmesser: 200 μm, Blende: 12 mm <br> ZSM-Algorithmus: Anzahl der Spalten/Zeilen n = 50, Offset o = 13, Nachbarschaft l = 9
+		  </small>
+		    <p>
+		      
+		  </td>
+		</tr>
+		      </table>
+
+
+	 
+	</section>
+
+<!-- -------------------------   Monitoring   ------------------------------   -->
+<!-- -------------------------   invivo Rosa   ------------------------------   -->
+<!-- -------------------------      4      ------------------------------   -->
+
+
+
+	<section  class="subsection color--orange" id="MonitoringInvivoRosa43">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
+	    </div>
+	    <div>
+	       <h3>5.5.2. in-vivo Messreihen an Kaninchenaugen</h3>			
+	      <h4>5.5.2.1. Beleuchtung bei 633 nm</h4>	
+	      	      <table style="width:100%">
+		<colgroup>
+		  <col span="1" style="width: 35%;">
+		  <col span="1" style="width: 65%;">
+		</colgroup>
+		<tr>
+		  <td style="vertical-align:top">
+		    <figure>
+		      <img src="images/monitoring/RosaFundus43.pdf" style="width:100%">
+		  
+		    </figure> </td>
+		  <td>
+		    <figure>
+		      <video class="video" width="100%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/RosaSpot43.mp4#t=9.99"
+		      /></video>
+		      <figcaption> Läsion #43 - T<sub>max</sub> = 59°C </figcaption>
+		    </figure>
+		    <p>
+		      <b><b>Abbildung 5.34.  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
+		Beispielläsionen bei verschiedener Sichtbarkeit
+		markiert: Spot 16 - kaum sichtbar, Spot 43 und 45 -
+		spät sichtbar, Spot 7 und 21 - sofort sichtbar. Für
+		jede Läsion ist das Zeitverlaufs-Specklemuster gezeigt
+		 Der
+		grüne Punkt im Bild des Specklemusters ist sichtbar,
+		wenn der Laser eingeschaltet ist.<br>
+		<small> Bestrahlungsparameter: Beleuchtungswellenlänge: 633 nm Bestrahlungszeit: 500 ms, Fleckdurchmesser: 200 μm, Blende: 12 mm <br> ZSM-Algorithmus: Anzahl der Spalten/Zeilen n = 50, Offset o = 13, Nachbarschaft l = 9
+		  </small>
+		    <p>
+		      
+		  </td>
+		</tr>
+		      </table>
+
+
+	 
+	</section>
+
+<!-- -------------------------   Monitoring   ------------------------------   -->
+<!-- -------------------------   invivo Rosa   ------------------------------   -->
+<!-- -------------------------      5      ------------------------------   -->
+
+
+
+	<section  class="subsection color--orange" id="MonitoringInvivoRosa45">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
+	    </div>
+	    <div>
+	       <h3>5.5.2. in-vivo Messreihen an Kaninchenaugen</h3>			
+	      <h4>5.5.2.1. Beleuchtung bei 633 nm</h4>	
+	      	      <table style="width:100%">
+		<colgroup>
+		  <col span="1" style="width: 35%;">
+		  <col span="1" style="width: 65%;">
+		</colgroup>
+		<tr>
+		  <td style="vertical-align:top">
+		    <figure>
+		      <img src="images/monitoring/RosaFundus45.pdf" style="width:100%">
+		  
+		    </figure> </td>
+		  <td>
+		    <figure>
+		      <video class="video" width="100%"
+		      preload="metadata"
+		      controls="true"
+		      loop="True"><source type="video/mp4"
+		      src="images/monitoring/RosaSpot45.mp4#t=9.99"
+		      /></video>
+		      <figcaption> Läsion #45 - T<sub>max</sub> = 53°C </figcaption>
+		    </figure>
+		    <p>
+		      <b><b>Abbildung 5.34.  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
+		Beispielläsionen bei verschiedener Sichtbarkeit
+		markiert: Spot 16 - kaum sichtbar, Spot 43 und 45 -
+		spät sichtbar, Spot 7 und 21 - sofort sichtbar. Für
+		jede Läsion ist das Zeitverlaufs-Specklemuster gezeigt
+		 Der
+		grüne Punkt im Bild des Specklemusters ist sichtbar,
+		wenn der Laser eingeschaltet ist.<br>
+		<small> Bestrahlungsparameter: Beleuchtungswellenlänge: 633 nm Bestrahlungszeit: 500 ms, Fleckdurchmesser: 200 μm, Blende: 12 mm <br> ZSM-Algorithmus: Anzahl der Spalten/Zeilen n = 50, Offset o = 13, Nachbarschaft l = 9
+		  </small>
+		    <p>
+		      
+		  </td>
+		</tr>
+		      </table>
+
+
+	 
+	</section>
+
+
+
+			
+	
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
