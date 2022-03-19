@@ -10,11 +10,6 @@
 		<link rel="stylesheet" href="css/theme/speckle.css">
 		<link rel="stylesheet" href="css/presentation.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<link rel="icon" href="lib/myplanet/logo/radiant-orange/mark-knockout.svg"/>
-
 		<!-- Printing and PDF exports -->
 		<script src="js/reveal-print.js"></script>
 	</head>
@@ -35,7 +30,7 @@
 	    Dissertation
 	  </h1>
 	  <div class="description">
-	    "Speckle basiertes Echtzeit-Monitoring für Laserbehandlungen des Auges"
+	    <em>Speckle basiertes Monitoring für Laserbehandlungen des Auges </em>
 	  </div>
 	</div>
 	<div class="credit">
@@ -48,15 +43,19 @@
       <section class="subsection color--orange" id="intro">
 	<div class="grid-wrapper">
 	  <div class="logo"></div>
-	  <h1>Intro</h1>
+	  <h1>Einleitung</h1>
 	  <div class="description">
-	    Dieses Dokument ist als Ergänzung zur Dissertation
-	    &ldquo;&rdquo; gedacht. Eine Vielzahl an Abbildungen in der
-	    Arbeit veranschaulicht dynamische Prozesse wie
-	    z.B. Specklebewegungen. Zum besseren Verständnis enthält
-	    dieses Dokument für diese Abbildungen eine Animation. Dieses
-	    Dokument ist genau wie die Arbeit gegliedert, Kapitel zu denen
-	    keine Animationen nötig sind, werden jedoch ausgespart.
+	    Dieses Dokument dient zur Ergänzung der Dissertation
+	     <em> &ldquo;Speckle basiertes Monitoring für
+	    Laserbehandlungen des Auges &rdquo; </em>. Diese Arbeit enthält eine Reihe
+	    an Abbildungen, anhand derer dynamische
+	    Prozesse wie z.B. Specklebewegungen veranschaulicht werden sollen. Zum besseren
+	    Verständnis enthält dieses Dokument für alle solche Abbildungen ergänzend
+	     eine Animation. Die Numerierung und Gliederung hier erfolgt in Anlehnung an die Dissertation.
+	    <p>
+	      <small>Die Leertaste ruft die nächste Folie auf; mittels
+	      Pfeiltasten bzw. der Pfeile am unteren rechten
+	      Bildrand kann durch die Folien navigiert werden. Die ECS Taste zeigt die komplette Struktur des Dokumentes.</small>
 	  </div>
 	</div>
       </section>
@@ -71,7 +70,7 @@
 	    <div class="logo"></div>
 	    <h1>Dynamische Speckle</h1>
 	    <div class="description">
-	       Darstellung theoretischer Veränderung derSpecklemuster
+	       Es folgen in diesem Abschnitt Visualisierungen theoretischer Veränderung der Specklemuster
 	       bei Bewegung oder struktureller Änderung der Probe,
 	       sowie Methoden zu dessen Darstellung als Funktion der
 	       Zeit.
@@ -82,10 +81,10 @@
 
 <!-- -------------------------   SPECKLE   ------------------------------   -->
 <!-- -------------------------   Theorie   ------------------------------   -->
-<!-- -------------------------     1       ------------------------------   -->
+<!-- -------------------------     1a       ------------------------------   -->
 
 
-	<section  class="subsection color--orange" id="dynSpeckleTranslation">
+	<section  class="subsection color--orange" id="dynSpeckleTranslation1">
 	  <div class="grid-wrapper">
 	    <div class="header">
 	      <div class="logo"></div>
@@ -95,51 +94,75 @@
 	      <h3> 3.2 Specklemesstechnik</h3>
 	      <h4> 3.2.2 Theoretische Speckleänderung bei Bewegung und Änderung des Objektes</h4>
            </p>
-           <table style="width:100%">
-               <colgroup>
-		 <col span="1" style="width: 30%;">
-		 <col span="1" style="width: 70%;">
-	       </colgroup>
-
-
-	       <tr>
-		 <td>Objekttranslation in der Objektebene </td>
-		 <td>
-		   <figure>
-		     <video class="video" width="70%"
+          	   <figure>
+		     <video class="video" width="85%"
 		     preload="metadata"
 		     controls="true"
 		     loop="True"><source type="video/mp4"
 		     src="images/dynSpeckle/objektbewegung_eine richtung.mp4#t=0.05" /></video>
-		     <figcaption>(a) konstante horizontale
-		     Objektverschiebung in Schritten von 1 µm (0.6
-		     Pixel)</figcaption>
+		     <figcaption>(a) Objektbewegung: ∆u=6μm, ∆v=0μm</figcaption>
 		   </figure>
+		   
+		   <p>
+		     <b><b>Abbildung 3.8: Specklebewegung bei
+		     Objekttranslation in der
+		     Objektebene</b></b><p>Es ist jeweils das
+		     Specklegramm (die Überlagerung zweier
+		     Specklemuster vor und nach der Translation), die
+		     Specklebewegung als Vektorkarte, das spektrale
+		     Streifenmuster und die Autokorrelationsfunktion
+		     des Specklegramms dargestellt, für: (a)
+		     ausschließlich horizontale Objektverschiebung um
+		     6 μm (10 Pixel).
+
+</section>
+
+
+<!-- -------------------------   SPECKLE   ------------------------------   -->
+<!-- -------------------------   Theorie   ------------------------------   -->
+<!-- -------------------------     1b       ------------------------------   -->
+
+
+	<section  class="subsection color--orange" id="dynSpeckleTranslation2">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">3. Dynamische Speckle</div>
+	    </div>
+	    <div>
+	      <h3> 3.2 Specklemesstechnik</h3>
+	      <h4> 3.2.2 Theoretische Speckleänderung bei Bewegung und Änderung des Objektes</h4>
+           </p>
+
 		   <figure>
-		     <video class="video" width="70%"
+		     <video class="video" width="85%"
 		     preload="metadata"
 		     controls="true"
 		     loop="True"><source type="video/mp4"
 		     src="images/dynSpeckle/objektbewegung_beide richtung.mp4#t=0.05" /></video>
-		     <figcaption>(b) konstante horizontale und
-		       vertikale Objektverschiebung in Schritten von je 1 µm (0.6
-		       Pixel)</figcaption>
+		     <figcaption>(b) Objektbewegung: ∆u=18μm, ∆v=18μm</figcaption>
 		   </figure>
 		   <p>
-		     <b><b>Abbildung 3.8.:</b></b> Specklebewegung bei Objekttranslation in der Objektebene
-		 </td>
-	       </tr>
-	   </table>
-       </section>
+		      <b><b>Abbildung 3.8: Specklebewegung bei
+		     Objekttranslation in der
+		     Objektebene</b></b><p>Es ist jeweils das
+		     Specklegramm (die Überlagerung zweier
+		     Specklemuster vor und nach der Translation), die
+		     Specklebewegung als Vektorkarte, das spektrale
+		     Streifenmuster und die Autokorrelationsfunktion
+		     des Specklegramms dargestellt, für: (b)
+		     horizontale und vertikale Objektverschiebung um
+		     je 18 μm (30 Pixel).
 
+       </section>
 
 <!-- -------------------------   SPECKLE   ------------------------------   -->
 <!-- -------------------------   THEORIE   ------------------------------   -->
-<!-- -------------------------      3      ------------------------------   -->
+<!-- -------------------------      3a      ------------------------------   -->
 
 
 
-	<section  class="subsection color--orange" id="dynSpeckleRotation">
+	<section  class="subsection color--orange" id="dynSpeckleRotation1">
 	  <div class="grid-wrapper">
 	    <div class="header">
 	      <div class="logo"></div>
@@ -147,16 +170,9 @@
 	    </div>
 	    <div>
 					
-	      <table style="width:100%">
-		<colgroup>
-		  <col span="1" style="width: 30%;">
-		  <col span="1" style="width: 70%;">
-		</colgroup>
-		<tr>
-		  <td>Objektrotation aus der Objektebene heraus</td>
-		  <td>
+	    
 		    <figure>
-		      <video class="video" width="60%"
+		      <video class="video" width="85%"
 		      preload="metadata"
 		      controls="true"
 		      loop="True"><source type="video/mp4"
@@ -164,8 +180,41 @@
 		      /></video>
 		      <figcaption> (a) Bildebene, fokussiert </figcaption>
 		    </figure>
+		   
+		    <p>
+		      <b><b>Abbildung 3.9: Einfluss der
+		     Detektionsebene auf die Specklebewegung bei
+		     Objektrotation</b></b><p>Es ist jeweils das
+		     Specklegramm (die Überlagerung zweier
+		     Specklemuster vor und nach Translation und
+		     Rotation), die Specklebewegung als Vektorkarte,
+		     das spektrale Streifenmuster und die
+		     Autokorrelationsfunktion des Specklegramms
+		     dargestellt bei Objekttranslation um je 12 μm
+		     horizontal und vertikal mit gleichzeitiger
+		     Rotation um 2°.  (a) fokussierte Detektion in der
+		     Bildebene.
+
+	</section>
+
+
+
+<!-- -------------------------   SPECKLE   ------------------------------   -->
+<!-- -------------------------   THEORIE   ------------------------------   -->
+<!-- -------------------------      3b      ------------------------------   -->
+
+
+
+	<section  class="subsection color--orange" id="dynSpeckleRotation2">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">3. Dynamische Speckle</div>
+	    </div>
+	    <div>
+
 		    <figure>
-		      <video class="video" width="60%"
+		      <video class="video" width="85%"
 		      preload="metadata"
 		      controls="true"
 		      loop="True"><source type="video/mp4"
@@ -173,8 +222,38 @@
 		      /></video>
 		      <figcaption> (b) Bildebene, defokussiert (∆z = -0,5 mm) </figcaption>
 		    </figure>
+		   
+		    <p>
+		       <b><b>Abbildung 3.9: Einfluss der
+		     Detektionsebene auf die Specklebewegung bei
+		     Objektrotation</b></b><p>Es ist jeweils das
+		     Specklegramm (die Überlagerung zweier
+		     Specklemuster vor und nach Translation und
+		     Rotation), die Specklebewegung als Vektorkarte,
+		     das spektrale Streifenmuster und die
+		     Autokorrelationsfunktion des Specklegramms
+		     dargestellt bei Objekttranslation um je 12 μm
+		     horizontal und vertikal mit gleichzeitiger
+		     Rotation um 2°.  (b) um -0,5 mm defokussierte Detektion in der Bildebene. 
+	</section>
+
+
+
+<!-- -------------------------   SPECKLE   ------------------------------   -->
+<!-- -------------------------   THEORIE   ------------------------------   -->
+<!-- -------------------------      3c      ------------------------------   -->
+
+
+
+	<section  class="subsection color--orange" id="dynSpeckleRotation3">
+	  <div class="grid-wrapper">
+	    <div class="header">
+	      <div class="logo"></div>
+	      <div class="section">3. Dynamische Speckle</div>
+	    </div>
+	    <div>
 		    <figure>
-		      <video class="video" width="60%"
+		      <video class="video" width="85%"
 		      preload="metadata"
 		      controls="true"
 		      loop="True"><source type="video/mp4"
@@ -183,10 +262,17 @@
 		      <figcaption> (c) Fourierebene </figcaption>
 		    </figure>
 		    <p>
-		      <b><b>Abbildung 3.9.:</b></b> Einfluss der Detektionsebene auf die Specklebewegung bei Objektrotation
-		  </td>
-		</tr>
-	      </table>
+		       <b><b>Abbildung 3.9: Einfluss der
+		     Detektionsebene auf die Specklebewegung bei
+		     Objektrotation</b></b><p>Es ist jeweils das
+		     Specklegramm (die Überlagerung zweier
+		     Specklemuster vor und nach Translation und
+		     Rotation), die Specklebewegung als Vektorkarte,
+		     das spektrale Streifenmuster und die
+		     Autokorrelationsfunktion des Specklegramms
+		     dargestellt bei Objekttranslation um je 12 μm
+		     horizontal und vertikal mit gleichzeitiger
+		     Rotation um 2°.  (c) Detektion in der Fourierebene. 
 	</section>
 
 
@@ -218,13 +304,13 @@
 		   </figure>
 		  
 		   <p>
-		     <b><b>Abbildung 3.14.: Möglichkeiten zur
+		     <b><b>Abbildung 3.14: Möglichkeiten zur
 		     Darstellung dynamischer Speckle</b></b><p> Es sind
 		     jeweils links Vektorkarten gezeigt. Zusätzlich zu
 		     den Vektoren sind sowohl die Winkel als auch
-		     darunter die Ampli- tuden der Vektoren
+		     darunter die Amplituden der Vektoren
 		     farbcodiert gezeigt. In der Mitte ist jeweils das
-		     THSP und rechts die normierten Aktivitätskarten
+		     Zeitverlaufs-Specklemuster und rechts die normierten Aktivitätskarten
 		     für die Specklesequenzen gezeigt, für drei
 		     verschiedene Specklesequenzen.
 	
@@ -256,13 +342,13 @@
 		   </figure>
 		  
 		   <p>
-		    <b><b>Abbildung 3.14.: Möglichkeiten zur
+		    <b><b>Abbildung 3.14: Möglichkeiten zur
 		     Darstellung dynamischer Speckle</b></b><p> Es sind
 		     jeweils links Vektorkarten gezeigt. Zusätzlich zu
 		     den Vektoren sind sowohl die Winkel als auch
-		     darunter die Ampli- tuden der Vektoren
+		     darunter die Amplituden der Vektoren
 		     farbcodiert gezeigt. In der Mitte ist jeweils das
-		     THSP und rechts die normierten Aktivitätskarten
+		     Zeitverlaufs-Specklemuster und rechts die normierten Aktivitätskarten
 		     für die Specklesequenzen gezeigt, für drei
 		     verschiedene Specklesequenzen.
 	
@@ -295,13 +381,13 @@
 		   </figure>
 		  
 		   <p>
-		   <b><b>Abbildung 3.14.: Möglichkeiten zur
+		   <b><b>Abbildung 3.14: Möglichkeiten zur
 		     Darstellung dynamischer Speckle</b></b><p> Es sind
 		     jeweils links Vektorkarten gezeigt. Zusätzlich zu
 		     den Vektoren sind sowohl die Winkel als auch
-		     darunter die Ampli- tuden der Vektoren
+		     darunter die Amplituden der Vektoren
 		     farbcodiert gezeigt. In der Mitte ist jeweils das
-		     THSP und rechts die normierten Aktivitätskarten
+		     Zeitverlaufs-Specklemuster und rechts die normierten Aktivitätskarten
 		     für die Specklesequenzen gezeigt, für drei
 		     verschiedene Specklesequenzen.
        </section>
@@ -321,7 +407,9 @@
 	    <div class="logo"></div>
 	    <h1>Speckle basiertes Monitoring der Photokoagulation</h1>
 	    <div class="description">
-	       Simulation und Ergebnisse des Specklemonitoring während der Hyperthermie und Photokoagulation <i>ex-vivo</i> und  <i>in-vivo</i>
+	       Simulation und Ergebnisse des Specklemonitorings während
+	       der Hyperthermie und Photokoagulation <i>ex-vivo</i>
+	       und <i>in-vivo</i>
 	    </div>
 	  </div>
 	</section>
@@ -402,7 +490,7 @@
 		      <figcaption> (a) kein Schaden, 210 W/cm<sup>2</sup> </figcaption>
 		    </figure>
 		    <p>
-		      <b><b>Abbildung 4.18.  Beispiel für
+		      <b><b>Abbildung 4.19:  Beispiel für
 		temperaturbedingte Specklebewegung</b></b><p><p>
 		dargestellt anhand von Zeitverlaufs-Specklemuster bei
 		verschiedenen Ausmaßen an Gewebeschäden. Links sind
@@ -410,7 +498,7 @@
 		Anzahl an geschädigten RPE Zellen zu sehen (der
 		Maßstabsbalken entspricht 100 μm). Daneben jeweils das
 		Zeitverlaufs-Specklemuster mit überlagertem Verlauf
-		der Änderunng der Specklebewegung (SZSM) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
+		der Änderunng der Specklebewegung (S<sub>ZSM</sub>) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
 		<small>Bestrahlungsparameter: Beleuchtungswellenlänge: 855
 		nm, Bestrahlungszeit: 500 ms, Fleckdurchmesser: 50,100
 		μm, Blende: 10,12 mm <br> Algorithmus: ZSM, Anzahl der
@@ -449,7 +537,7 @@
 		      <figcaption> (b) leichter Schaden, 298 W/cm<sup>2</sup> </figcaption>
 		    </figure>
 		    <p>
-		      <b><b>Abbildung 4.18.  Beispiel für
+		      <b><b>Abbildung 4.19:  Beispiel für
 		temperaturbedingte Specklebewegung</b></b><p><p>
 		dargestellt anhand von Zeitverlaufs-Specklemuster bei
 		verschiedenen Ausmaßen an Gewebeschäden. Links sind
@@ -457,7 +545,7 @@
 		Anzahl an geschädigten RPE Zellen zu sehen (der
 		Maßstabsbalken entspricht 100 μm). Daneben jeweils das
 		Zeitverlaufs-Specklemuster mit überlagertem Verlauf
-		der Änderunng der Specklebewegung (SZSM) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
+		der Änderunng der Specklebewegung (S<sub>ZSM</sub>) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
 		<small>Bestrahlungsparameter: Beleuchtungswellenlänge: 855
 		nm, Bestrahlungszeit: 500 ms, Fleckdurchmesser: 50,100
 		μm, Blende: 10,12 mm <br> Algorithmus: ZSM, Anzahl der
@@ -497,7 +585,7 @@
 		      <figcaption> (c) RPE Schaden, 387 W/cm<sup>2</sup> </figcaption>
 		    </figure>
 		    <p>
-		      <b><b>Abbildung 4.18.  Beispiel für
+		      <b><b>Abbildung 4.19:  Beispiel für
 		temperaturbedingte Specklebewegung</b></b><p><p>
 		dargestellt anhand von Zeitverlaufs-Specklemuster bei
 		verschiedenen Ausmaßen an Gewebeschäden. Links sind
@@ -505,7 +593,7 @@
 		Anzahl an geschädigten RPE Zellen zu sehen (der
 		Maßstabsbalken entspricht 100 μm). Daneben jeweils das
 		Zeitverlaufs-Specklemuster mit überlagertem Verlauf
-		der Änderunng der Specklebewegung (SZSM) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
+		der Änderunng der Specklebewegung (S<sub>ZSM</sub>) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
 		<small>Bestrahlungsparameter: Beleuchtungswellenlänge: 855
 		nm, Bestrahlungszeit: 500 ms, Fleckdurchmesser: 50,100
 		μm, Blende: 10,12 mm <br> Algorithmus: ZSM, Anzahl der
@@ -542,7 +630,7 @@
 		      <figcaption> (d) RPE Schaden, 456 W/cm<sup>2</sup> </figcaption>
 		    </figure>
 		    <p>
-		      <b><b>Abbildung 4.18.  Beispiel für
+		      <b><b>Abbildung 4.19:  Beispiel für
 		temperaturbedingte Specklebewegung</b></b><p><p>
 		dargestellt anhand von Zeitverlaufs-Specklemuster bei
 		verschiedenen Ausmaßen an Gewebeschäden. Links sind
@@ -550,7 +638,7 @@
 		Anzahl an geschädigten RPE Zellen zu sehen (der
 		Maßstabsbalken entspricht 100 μm). Daneben jeweils das
 		Zeitverlaufs-Specklemuster mit überlagertem Verlauf
-		der Änderunng der Specklebewegung (SZSM) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
+		der Änderunng der Specklebewegung (S<sub>ZSM</sub>) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
 		<small>Bestrahlungsparameter: Beleuchtungswellenlänge: 855
 		nm, Bestrahlungszeit: 500 ms, Fleckdurchmesser: 50,100
 		μm, Blende: 10,12 mm <br> Algorithmus: ZSM, Anzahl der
@@ -587,7 +675,7 @@
 		      <figcaption> (e) Weißfärbung, 520 W/cm<sup>2</sup> </figcaption>
 		    </figure>
 		    <p>
-		      <b><b>Abbildung 4.18.  Beispiel für
+		      <b><b>Abbildung 4.19:  Beispiel für
 		temperaturbedingte Specklebewegung</b></b><p><p>
 		dargestellt anhand von Zeitverlaufs-Specklemuster bei
 		verschiedenen Ausmaßen an Gewebeschäden. Links sind
@@ -595,7 +683,7 @@
 		Anzahl an geschädigten RPE Zellen zu sehen (der
 		Maßstabsbalken entspricht 100 μm). Daneben jeweils das
 		Zeitverlaufs-Specklemuster mit überlagertem Verlauf
-		der Änderunng der Specklebewegung (SZSM) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
+		der Änderunng der Specklebewegung (S<sub>ZSM</sub>) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
 		<small>Bestrahlungsparameter: Beleuchtungswellenlänge: 855
 		nm, Bestrahlungszeit: 500 ms, Fleckdurchmesser: 50,100
 		μm, Blende: 10,12 mm <br> Algorithmus: ZSM, Anzahl der
@@ -632,7 +720,7 @@
 		      <figcaption> (f) Weißfärbung, 733 W/cm<sup>2</sup> </figcaption>
 		    </figure>
 		    <p>
-		      <b><b>Abbildung 4.18.  Beispiel für
+		      <b><b>Abbildung 4.19:  Beispiel für
 		temperaturbedingte Specklebewegung</b></b><p><p>
 		dargestellt anhand von Zeitverlaufs-Specklemuster bei
 		verschiedenen Ausmaßen an Gewebeschäden. Links sind
@@ -640,7 +728,7 @@
 		Anzahl an geschädigten RPE Zellen zu sehen (der
 		Maßstabsbalken entspricht 100 μm). Daneben jeweils das
 		Zeitverlaufs-Specklemuster mit überlagertem Verlauf
-		der Änderunng der Specklebewegung (SZSM) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
+		der Änderunng der Specklebewegung (S<sub>ZSM</sub>) gezeigt. Der grüne Punkt im Bild des Specklemusters ist sichtbar, wenn der Laser eingeschaltet ist.<br>
 		<small>Bestrahlungsparameter: Beleuchtungswellenlänge: 855
 		nm, Bestrahlungszeit: 500 ms, Fleckdurchmesser: 50,100
 		μm, Blende: 10,12 mm <br> Algorithmus: ZSM, Anzahl der
@@ -678,11 +766,11 @@
 		      /></video>
 		    </figure>
 		    <p>
-		      <b><b>Abbildung 5.20.  Die unterschiedliche
+		      <b><b>Abbildung 5.21:  Die unterschiedliche
 		Natur der Specklebewegung in den verschiedenen Phasen
 		der Bestrahlungg</b></b><p><p> Dem
 		Zeitverlaufs-Specklemuster einer Beispielbestrahlung
-		ist die Summe der Specklebewegungen der Sub-Bilder SVK
+		ist die Summe der Specklebewegungen der Sub-Bilder S<sub>VK</sub>
 		in blau, sowie die gesamtheitliche Richtung der
 		Bewegung (nach innen oder außen) in rot überlagert. Zu
 		jedem Zeitpunkt ist daneben die Vektorkarte, sowie der
@@ -712,7 +800,7 @@
 	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
 	    </div>
 	    <div>
-	       <h3>5.5.2. in-vivo Messreihen an Kaninchenaugen</h3>			
+	       <h3>5.5.2. <em>In-vivo</em> Messreihen an Kaninchenaugen</h3>			
 	      <h4>5.5.2.1. Beleuchtung bei 855 nm</h4>	
 	      	      <table style="width:100%">
 		<colgroup>
@@ -720,9 +808,13 @@
 		  <col span="1" style="width: 70%;">
 		</colgroup>
 		<tr>
-		  <td style="vertical-align:top"><b><b>Abbildung 5.33.  Vergleich des Untergrundrauschens der Specklebewegung in-vivo und ex-vivo</b></b><p><p>
-		Zeitverlaufs-Specklemuster sind für Aufnahmen ohne Heizen gezeigt. Die Daten wurden der Bewegungskorrektur unterzogen. 
-  <br> ZSM-Algorithmus: Anzahl der Spalten/Zeilen n = 50</small> </td>
+		  <td style="vertical-align:top"><b><b>Abbildung 5.38:
+		Vergleich des Untergrundrauschens der Specklebewegung
+		<em>in-vivo</em> und <em>ex-vivo</em></b></b><p><p>
+		Zeitverlaufs-Specklemuster sind für Aufnahmen ohne
+		Heizen gezeigt. Die Daten wurden der
+		Bewegungskorrektur unterzogen.
+  <br><small> ZSM-Algorithmus: Anzahl der Spalten/Zeilen n = 50</small> </td>
 		  <td>
 		    <figure>
 		      <video class="video" width="60%"
@@ -731,7 +823,7 @@
 		      loop="True"><source type="video/mp4"
 		      src="images/monitoring/exvivo855.mp4#t=4.95"
 		      /></video>
-		      <figcaption> (a) bei einer Beleuchtungswellenlänge von 855 nm (Blende: 12 mm, 1000 fps). </figcaption>
+		      <figcaption> (a) <em>Ex-vivo</em> bei einer Beleuchtungswellenlänge von 855 nm (Blende: 12 mm, 1000 fps). </figcaption>
 		    </figure>
 		    <figure>
 		      <video class="video" width="60%"
@@ -740,7 +832,7 @@
 		      loop="True"><source type="video/mp4"
 		      src="images/monitoring/invivo855.mp4#t=4.95"
 		      /></video>
-		      <figcaption> (b) In-vivo bei einer Beleuchtungswellenlänge von 855 nm (Blende: 12 mm, 500 fps). </figcaption>
+		      <figcaption> (b) <em>In-vivo</em> bei einer Beleuchtungswellenlänge von 855 nm (Blende: 12 mm, 500 fps). </figcaption>
 		    </figure>
 		    <figure>
 		      <video class="video" width="60%"
@@ -749,7 +841,7 @@
 		      loop="True"><source type="video/mp4"
 		      src="images/monitoring/invivo633.mp4#t=4.95"
 		      /></video>
-		      <figcaption> (c) In-vivo bei einer Beleuchtungswellenlänge von 633 nm (Blende: 12 mm, 500 fps).</figcaption>
+		      <figcaption> (c) <em>In-vivo</em> bei einer Beleuchtungswellenlänge von 633 nm (Blende: 12 mm, 500 fps).</figcaption>
 		    </figure>
 		    <p>
 		      
@@ -776,7 +868,7 @@
 	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
 	    </div>
 	    <div>
-	       <h3>5.5.2. in-vivo Messreihen an Kaninchenaugen</h3>			
+	       <h3>5.5.2.  <em>In-vivo</em>  Messreihen an Kaninchenaugen</h3>			
 	      <h4>5.5.2.1. Beleuchtung bei 633 nm</h4>	
 	      	      <table style="width:100%">
 		<colgroup>
@@ -800,7 +892,7 @@
 		      <figcaption> Läsion #7 - T<sub>max</sub> = 81°C </figcaption>
 		    </figure>
 		    <p>
-		      <b><b>Abbildung 5.34.  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
+		      <b><b>Abbildung 5.39:  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
 		Beispielläsionen bei verschiedener Sichtbarkeit
 		markiert: Spot 16 - kaum sichtbar, Spot 43 und 45 -
 		spät sichtbar, Spot 7 und 21 - sofort sichtbar. Für
@@ -833,7 +925,7 @@
 	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
 	    </div>
 	    <div>
-	       <h3>5.5.2. in-vivo Messreihen an Kaninchenaugen</h3>			
+	       <h3>5.5.2.  <em>In-vivo</em>  Messreihen an Kaninchenaugen</h3>			
 	      <h4>5.5.2.1. Beleuchtung bei 633 nm</h4>	
 	      	      <table style="width:100%">
 		<colgroup>
@@ -857,7 +949,7 @@
 		      <figcaption> Läsion #16 - T<sub>max</sub> = 50°C </figcaption>
 		    </figure>
 		    <p>
-		      <b><b>Abbildung 5.34.  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
+		      <b><b>Abbildung 5.39:  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
 		Beispielläsionen bei verschiedener Sichtbarkeit
 		markiert: Spot 16 - kaum sichtbar, Spot 43 und 45 -
 		spät sichtbar, Spot 7 und 21 - sofort sichtbar. Für
@@ -890,7 +982,7 @@
 	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
 	    </div>
 	    <div>
-	       <h3>5.5.2. in-vivo Messreihen an Kaninchenaugen</h3>			
+	       <h3>5.5.2. <em>In-vivo</em>  Messreihen an Kaninchenaugen</h3>			
 	      <h4>5.5.2.1. Beleuchtung bei 633 nm</h4>	
 	      	      <table style="width:100%">
 		<colgroup>
@@ -914,7 +1006,7 @@
 		      <figcaption> Läsion #21 - T<sub>max</sub> = 69°C </figcaption>
 		    </figure>
 		    <p>
-		      <b><b>Abbildung 5.34.  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
+		      <b><b>Abbildung 5.39:  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
 		Beispielläsionen bei verschiedener Sichtbarkeit
 		markiert: Spot 16 - kaum sichtbar, Spot 43 und 45 -
 		spät sichtbar, Spot 7 und 21 - sofort sichtbar. Für
@@ -947,7 +1039,7 @@
 	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
 	    </div>
 	    <div>
-	       <h3>5.5.2. in-vivo Messreihen an Kaninchenaugen</h3>			
+	       <h3>5.5.2.  <em>In-vivo</em>  Messreihen an Kaninchenaugen</h3>			
 	      <h4>5.5.2.1. Beleuchtung bei 633 nm</h4>	
 	      	      <table style="width:100%">
 		<colgroup>
@@ -971,7 +1063,7 @@
 		      <figcaption> Läsion #43 - T<sub>max</sub> = 59°C </figcaption>
 		    </figure>
 		    <p>
-		      <b><b>Abbildung 5.34.  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
+		      <b><b>Abbildung 5.39:  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
 		Beispielläsionen bei verschiedener Sichtbarkeit
 		markiert: Spot 16 - kaum sichtbar, Spot 43 und 45 -
 		spät sichtbar, Spot 7 und 21 - sofort sichtbar. Für
@@ -1004,7 +1096,7 @@
 	      <div class="section">5. Speckle basiertes Monitoring der Photokoagulation</div>
 	    </div>
 	    <div>
-	       <h3>5.5.2. in-vivo Messreihen an Kaninchenaugen</h3>			
+	       <h3>5.5.2. <em>In-vivo</em>  Messreihen an Kaninchenaugen</h3>			
 	      <h4>5.5.2.1. Beleuchtung bei 633 nm</h4>	
 	      	      <table style="width:100%">
 		<colgroup>
@@ -1028,7 +1120,7 @@
 		      <figcaption> Läsion #45 - T<sub>max</sub> = 53°C </figcaption>
 		    </figure>
 		    <p>
-		      <b><b>Abbildung 5.34.  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
+		      <b><b>Abbildung 5.39:  Beispielbestrahlungen in-vivo </b></b><p><p> Im Fundusphoto sind 5
 		Beispielläsionen bei verschiedener Sichtbarkeit
 		markiert: Spot 16 - kaum sichtbar, Spot 43 und 45 -
 		spät sichtbar, Spot 7 und 21 - sofort sichtbar. Für
